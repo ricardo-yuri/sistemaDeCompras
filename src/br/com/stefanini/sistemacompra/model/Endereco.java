@@ -4,25 +4,25 @@ public class Endereco {
 
 	private Integer idEndereco;
 	private String logradouro;
-	private String localidade;
+	private String cep;
 	private Cliente cliente;
 
 	public Endereco() {
 
 	}
 
-	public Endereco(Integer idEndereco, String logradouro, String localidade, Cliente cliente) {
+	public Endereco(Integer idEndereco, String logradouro, String cep, Cliente cliente) {
 		super();
 		this.idEndereco = idEndereco;
 		this.logradouro = logradouro;
-		this.localidade = localidade;
+		this.cep = cep;
 		this.cliente = cliente;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "Endereco [idEndereco=" + idEndereco + ", logradouro=" + logradouro + ", localidade=" + localidade
-				+ ", cliente=" + cliente + "]";
+		return "Endereco [idEndereco=" + idEndereco + ", logradouro=" + logradouro + ", cep=" + cep + ", cliente="
+				+ cliente + "]";
 	}
 
 	public Integer getIdEndereco() {
@@ -41,12 +41,12 @@ public class Endereco {
 		this.logradouro = logradouro;
 	}
 
-	public String getLocalidade() {
-		return localidade;
+	public String getCep() {
+		return cep;
 	}
 
-	public void setLocalidade(String localidade) {
-		this.localidade = localidade;
+	public void setCep(String cep) {
+		this.cep = cep;
 	}
 
 	public Cliente getCliente() {
