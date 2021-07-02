@@ -19,6 +19,12 @@ public class ItemProduto {
 		this.valorTotal = valorTotal;
 	}
 
+	@Override
+	public String toString() {
+		return "ItemProduto [idItemProduto=" + idItemProduto + ", quantidade=" + quantidade + ", produto=" + produto
+				+ ", valorTotal=" + valorTotal + "]";
+	}
+
 	public Integer getIdItemProduto() {
 		return idItemProduto;
 	}

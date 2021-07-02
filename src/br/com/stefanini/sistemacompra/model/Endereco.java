@@ -8,9 +8,9 @@ public class Endereco {
 	private Cliente cliente;
 
 	public Endereco() {
-
+		
 	}
-
+	
 	public Endereco(Integer idEndereco, String logradouro, String cep, Cliente cliente) {
 		super();
 		this.idEndereco = idEndereco;
